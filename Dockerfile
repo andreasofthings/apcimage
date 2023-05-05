@@ -2,7 +2,7 @@ FROM python:3.11-slim as python-base
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PYSETUP_PATH="." \
-    VENV_PATH="./.venv"
+    VENV_PATH="./.venv" \
     PATH="$VENV_PATH/bin:$PATH"
 ENV PATH="$POETRY_HOME/bin:$VENV_PATH/bin:$PATH"
 
