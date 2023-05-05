@@ -1,5 +1,6 @@
 [packages]
 django = "*"
 daphne = "*"
+twisted = {version = "*", extras = ["http2", "tls"]}
 celery = "*"
 supervisor = "*"

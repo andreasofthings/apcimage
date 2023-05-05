@@ -4,7 +4,7 @@ ENV PYTHONUNBUFFERED=1 \
     PYSETUP_PATH="." \
     VENV_PATH="./.venv" \
     PATH="$VENV_PATH/bin:$PATH"
-ENV PATH="$POETRY_HOME/bin:$VENV_PATH/bin:$PATH"
+ENV PATH="$VENV_PATH/bin:$PATH"
 
 FROM python-base as builder-base
 RUN apt-get update
